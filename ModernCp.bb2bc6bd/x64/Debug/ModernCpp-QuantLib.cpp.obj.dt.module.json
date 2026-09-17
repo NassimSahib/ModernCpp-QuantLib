@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "ModernCp.bb2bc6bd\\x64\\Debug\\ModernCpp-QuantLib.obj",
+            "outputs": [
+                "ModernCp.bb2bc6bd\\x64\\Debug\\ModernCpp-QuantLib.cpp.obj.dt.module.json",
+                "ModernCp.bb2bc6bd\\x64\\Debug\\ModernCpp-QuantLib.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
