@@ -18,7 +18,7 @@ public:
 		double rate,
 		double div = 0.0);
 	
-	double operator()(double vol) const;
+	double operator()(double vol);
 
 private:
 	std::array<double, 2> compute_norm_args_(double vol);

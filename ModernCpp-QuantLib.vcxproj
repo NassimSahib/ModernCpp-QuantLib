@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlackScholes.cpp" />
     <ClCompile Include="ModernCpp-QuantLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlackScholes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
