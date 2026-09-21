@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BlackScholes.cpp" />
+    <ClCompile Include="ImpliedVolatilitySecant.cpp" />
     <ClCompile Include="ModernCpp-QuantLib.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackScholes.h" />
+    <ClInclude Include="ImpliedVolatilitySecant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

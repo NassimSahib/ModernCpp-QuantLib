@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="ModernCpp-QuantLib.vcxproj" />
+  <Project Path="ModernCpp-QuantLib.vcxproj" Id="bb2bc6bd-e4b8-41f3-94c1-ef76b90d45bb" />
 </Solution>

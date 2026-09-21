@@ -30,9 +30,15 @@
     <ClCompile Include="BlackScholes.cpp">
       <Filter>Fichiers sources\BlackScholesImplementations</Filter>
     </ClCompile>
+    <ClCompile Include="ImpliedVolatilitySecant.cpp">
+      <Filter>Fichiers sources\BlackScholesImplementations</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackScholes.h">
+      <Filter>Fichiers d%27en-tête\BlackShcolesImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpliedVolatilitySecant.h">
       <Filter>Fichiers d%27en-tête\BlackShcolesImplementations</Filter>
     </ClInclude>
   </ItemGroup>

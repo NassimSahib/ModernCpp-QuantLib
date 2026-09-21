@@ -18,10 +18,10 @@ public:
 		double rate,
 		double div = 0.0);
 	
-	double operator()(double vol);
+	double operator()(double vol) const ;
 
 private:
-	std::array<double, 2> compute_norm_args_(double vol);
+	std::array<double, 2> compute_norm_args_(double vol) const;
 
 	double strike_, spot_, time_to_exp_;
 	PayoffType payoff_type_;

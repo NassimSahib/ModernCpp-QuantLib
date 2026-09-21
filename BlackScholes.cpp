@@ -18,7 +18,7 @@ BlackScholes::BlackScholes(double strike,
 	rate_{ rate },
 	div_{ div } { }
 
-std::array<double, 2> BlackScholes::compute_norm_args_(double vol)
+std::array<double, 2> BlackScholes::compute_norm_args_(double vol) const
 {
 	using std::exp;
 	using std::sqrt;
@@ -32,7 +32,7 @@ std::array<double, 2> BlackScholes::compute_norm_args_(double vol)
 	return { d1, d2 };
 }
 
-double BlackScholes::operator()(double vol) {
+double BlackScholes::operator()(double vol) const {
 	using std::exp;
 	const int phi = static_cast<int>(payoff_type_);
 

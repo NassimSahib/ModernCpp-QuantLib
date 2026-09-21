@@ -1,1 +1,29 @@
-﻿.vs/
+﻿# Dossiers de build et de sortie (Debug, Release, x64, x86)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bin/
+obj/
+
+# Fichiers de build spécifiques à Visual Studio et outils associés
+*.obj
+*.ilk
+*.pdb
+*.idb
+*.exe
+*.recipe
+*.log
+
+# Modules C++20 et fichiers JSON de configuration dérivés
+*.dt.d.json
+*.dt.module.json
+*.dt.module.json.command
+
+# Fichiers cachés de Visual Studio (comme l'historique et les bases de données de code)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
