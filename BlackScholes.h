@@ -35,7 +35,7 @@ public:
 
 private:
 	std::array<double, 2> compute_norm_args_(double vol) const;
-	double norm_cdf(double x) const; // Ch 4
+	double norm_cdf_(double x) const; // Ch 4
 
 	double strike_, spot_, time_to_exp_;
 	PayoffType payoff_type_;

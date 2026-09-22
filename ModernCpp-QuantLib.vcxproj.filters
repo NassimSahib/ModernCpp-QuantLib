@@ -24,7 +24,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ModernCpp-QuantLib.cpp">
+    <ClCompile Include="BlackScholesRun.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="BlackScholes.cpp">
@@ -32,6 +32,21 @@
     </ClCompile>
     <ClCompile Include="ImpliedVolatilitySecant.cpp">
       <Filter>Fichiers sources\BlackScholesImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionInfo.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CallPayoff.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="PutPayoff.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionInfoRun.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="VWAP.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,5 +56,20 @@
     <ClInclude Include="ImpliedVolatilitySecant.h">
       <Filter>Fichiers d%27en-tête\BlackShcolesImplementations</Filter>
     </ClInclude>
+    <ClInclude Include="OptionInfo.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Payoff.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CallPayoff.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="PutPayoff.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

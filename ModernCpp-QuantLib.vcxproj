@@ -140,12 +140,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BlackScholes.cpp" />
+    <ClCompile Include="CallPayoff.cpp" />
     <ClCompile Include="ImpliedVolatilitySecant.cpp" />
-    <ClCompile Include="ModernCpp-QuantLib.cpp" />
+    <ClCompile Include="BlackScholesRun.cpp" />
+    <ClCompile Include="OptionInfo.cpp" />
+    <ClCompile Include="OptionInfoRun.cpp" />
+    <ClCompile Include="PutPayoff.cpp" />
+    <ClCompile Include="VWAP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackScholes.h" />
+    <ClInclude Include="CallPayoff.h" />
     <ClInclude Include="ImpliedVolatilitySecant.h" />
+    <ClInclude Include="OptionInfo.h" />
+    <ClInclude Include="Payoff.h" />
+    <ClInclude Include="PutPayoff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
