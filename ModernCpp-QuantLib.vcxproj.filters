@@ -57,6 +57,9 @@
     <ClCompile Include="Tstudent_Poisson_Distrib.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="ShuffleBackTesting.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BlackScholes.h">
