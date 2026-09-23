@@ -148,6 +148,7 @@
     <ClCompile Include="OptionInfo.cpp" />
     <ClCompile Include="OptionInfoRun.cpp" />
     <ClCompile Include="PutPayoff.cpp" />
+    <ClCompile Include="Tstudent_Poisson_Distrib.cpp" />
     <ClCompile Include="VWAP.cpp" />
   </ItemGroup>
   <ItemGroup>
