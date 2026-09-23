@@ -144,6 +144,7 @@
     <ClCompile Include="ImpliedVolatilitySecant.cpp" />
     <ClCompile Include="BlackScholesRun.cpp" />
     <ClCompile Include="LogReturns.cpp" />
+    <ClCompile Include="NormalDistributionGeneration.cpp" />
     <ClCompile Include="OptionInfo.cpp" />
     <ClCompile Include="OptionInfoRun.cpp" />
     <ClCompile Include="PutPayoff.cpp" />
