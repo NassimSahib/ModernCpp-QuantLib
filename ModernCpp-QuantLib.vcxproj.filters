@@ -22,6 +22,12 @@
     <Filter Include="Fichiers sources\BlackScholesImplementations">
       <UniqueIdentifier>{869c1a2f-cebd-4db8-b9e4-2a53035b2247}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\MonteCarloImplementations">
+      <UniqueIdentifier>{85c255c7-fc6d-4c88-a7bd-bf5ef7827679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\MonteCarloImplementations">
+      <UniqueIdentifier>{0008203a-74f4-497b-81ce-2632c1213420}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BlackScholesRun.cpp">
@@ -57,7 +63,19 @@
     <ClCompile Include="Tstudent_Poisson_Distrib.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="ShuffleBackTesting.cpp">
+    <ClCompile Include="ShuffleBackTestingVaR.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EquityPriceGenerator.cpp">
+      <Filter>Fichiers sources\MonteCarloImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="MCOptionValuation.cpp">
+      <Filter>Fichiers sources\MonteCarloImplementations</Filter>
+    </ClCompile>
+    <ClCompile Include="ParallelExecutionExamples.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ChronoExamples.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -78,6 +96,15 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="PutPayoff.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="EquityPriceGenerator.h">
+      <Filter>Fichiers d%27en-tête\MonteCarloImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="MCOptionValuation.h">
+      <Filter>Fichiers d%27en-tête\MonteCarloImplementations</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierType.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>

@@ -141,21 +141,28 @@
   <ItemGroup>
     <ClCompile Include="BlackScholes.cpp" />
     <ClCompile Include="CallPayoff.cpp" />
+    <ClCompile Include="ChronoExamples.cpp" />
+    <ClCompile Include="EquityPriceGenerator.cpp" />
     <ClCompile Include="ImpliedVolatilitySecant.cpp" />
     <ClCompile Include="BlackScholesRun.cpp" />
     <ClCompile Include="LogReturns.cpp" />
+    <ClCompile Include="MCOptionValuation.cpp" />
     <ClCompile Include="NormalDistributionGeneration.cpp" />
     <ClCompile Include="OptionInfo.cpp" />
     <ClCompile Include="OptionInfoRun.cpp" />
+    <ClCompile Include="ParallelExecutionExamples.cpp" />
     <ClCompile Include="PutPayoff.cpp" />
-    <ClCompile Include="ShuffleBackTesting.cpp" />
+    <ClCompile Include="ShuffleBackTestingVaR.cpp" />
     <ClCompile Include="Tstudent_Poisson_Distrib.cpp" />
     <ClCompile Include="VWAP.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BarrierType.h" />
     <ClInclude Include="BlackScholes.h" />
     <ClInclude Include="CallPayoff.h" />
+    <ClInclude Include="EquityPriceGenerator.h" />
     <ClInclude Include="ImpliedVolatilitySecant.h" />
+    <ClInclude Include="MCOptionValuation.h" />
     <ClInclude Include="OptionInfo.h" />
     <ClInclude Include="Payoff.h" />
     <ClInclude Include="PutPayoff.h" />

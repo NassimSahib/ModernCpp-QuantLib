@@ -3,7 +3,7 @@
 #include <random>
 #include <algorithm>
 
-EquityPriceGenerator::EquityPriceGenerator(double spot, int num_time_steps,
+EquityPriceGenerator::EquityPriceGenerator(double spot, unsigned num_time_steps,
     double time_to_expiration, double volatility, double rf_rate,
     double div_rate) :
     spot_{ spot }, num_time_steps_{ num_time_steps },
@@ -31,7 +31,7 @@ std::vector<double> EquityPriceGenerator::operator()(unsigned seed) const
     double equity_price = spot_;
     // i <= num_time_steps_ since we need
     // a price at the end of the final time step:
-    for (int i = 1; i <= num_time_steps_; ++i)
+    for (unsigned i = 1; i <= num_time_steps_; ++i)
     {
         equity_price = new_price(equity_price, nd(mt)); // norm = nd(mt)
         v.push_back(equity_price);

@@ -9,7 +9,7 @@
 
 #include <future>
 
-MCOptionValuation::MCOptionValuation(OptionInfo&& opt, int time_steps,
+MCOptionValuation::MCOptionValuation(OptionInfo&& opt, unsigned time_steps,
     double vol, double int_rate, double div_rate, BarrierType barrier_type,
     double barrier_value) :
     opt_{ std::move(opt) }, time_steps_{ time_steps },
