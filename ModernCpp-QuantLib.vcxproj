@@ -141,7 +141,9 @@
   <ItemGroup>
     <ClCompile Include="BlackScholes.cpp" />
     <ClCompile Include="CallPayoff.cpp" />
+    <ClCompile Include="ChronoDate.cpp" />
     <ClCompile Include="ChronoExamples.cpp" />
+    <ClCompile Include="DayCountExamples.cpp" />
     <ClCompile Include="EquityPriceGenerator.cpp" />
     <ClCompile Include="ImpliedVolatilitySecant.cpp" />
     <ClCompile Include="BlackScholesRun.cpp" />
@@ -160,6 +162,7 @@
     <ClInclude Include="BarrierType.h" />
     <ClInclude Include="BlackScholes.h" />
     <ClInclude Include="CallPayoff.h" />
+    <ClInclude Include="ChronoDate.h" />
     <ClInclude Include="EquityPriceGenerator.h" />
     <ClInclude Include="ImpliedVolatilitySecant.h" />
     <ClInclude Include="MCOptionValuation.h" />
