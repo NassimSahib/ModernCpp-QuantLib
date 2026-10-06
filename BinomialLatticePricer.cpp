@@ -43,3 +43,43 @@ void BinomialLatticePricer::project_underlying_prices_(double spot)
         }
     }
 }
+
+void BinomialLatticePricer::american_payoffs_()
+{
+    // Start from penultimate column prior to expiration: j = time_points_ - 2
+    for (int j = time_points_ - 2; j >= 0; --j)
+    {
+        for (int i = 0; i <= j; ++i)
+        {
+            grid_[i][j].payoff = std::max(disc_expected_val_(i, j),
+                opt_.option_payoff(grid_[i][j].underlying));
+        }
+    }
+}
+// Step (3) -- European
+void BinomialLatticePricer::european_payoffs_()
+{
+    // Start from penultimate column prior to expiration: j = time_points_ - 2
+    for (int j = time_points_ - 2; j >= 0; --j)
+    {
+        for (int i = 0; i <= j; ++i)
+        {
+            grid_[i][j].payoff = disc_expected_val_(i, j);
+        }
+    }
+}
+
+double BinomialLatticePricer::calculate_node_payoffs_(OptType opt_type)
+{
+    // Set the terminal nodes with payoffs at expiration: j = time_points_ - 1
+    for (int i = 0; i <= time_points_ - 1; ++i)
+    {
+        grid_[i][time_points_ - 1].payoff =
+            opt_.option_payoff(grid_[i][time_points_ - 1].underlying);
+    }
+    if (opt_type == OptType::American)
+        american_payoffs_();
+    else
+        european_payoffs_();      // OptType::Euro
+    return grid_[0][0].payoff;    // Option value
+}
